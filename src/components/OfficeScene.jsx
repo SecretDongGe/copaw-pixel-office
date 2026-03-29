@@ -1,15 +1,15 @@
 import './OfficeScene.css'
 
-// 导入背景图片
-import officeBg from '../assets/office.png'
-import cloudBg from '../assets/cloud.png'
-import terminalBg from '../assets/terminal.png'
+// 导入场景背景图片 (800x600)
+import sceneDesk from '../assets/scene_desk.png'
+import sceneLounge from '../assets/scene_lounge.png'
+import sceneBug from '../assets/scene_bug.png'
 
 // 背景配置
 const BACKGROUNDS = {
-  office: officeBg,
-  cloud: cloudBg,
-  terminal: terminalBg,
+  desk: sceneDesk,
+  lounge: sceneLounge,
+  bug: sceneBug,
 }
 
 // 预设位置（百分比）

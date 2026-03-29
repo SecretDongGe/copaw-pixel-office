@@ -66,9 +66,9 @@ function App() {
         {/* 左侧：场景展示 */}
         <section className="scene-section">
           <OfficeScene
-            background="office"
+            background="desk"
             width="100%"
-            height="400px"
+            height="500px"
             positions={[
               {
                 position: 'centerLeft',
