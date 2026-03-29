@@ -1,0 +1,210 @@
+.control-panel {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 12px;
+  padding: 16px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.control-panel-compact {
+  min-width: 200px;
+  padding: 12px;
+}
+
+.panel-section {
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 16px;
+}
+
+.panel-section:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-indicator {
+  font-size: 16px;
+}
+
+.status-text {
+  color: #e0e0e0;
+}
+
+.section-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  text-align: left;
+}
+
+.section-title:hover {
+  opacity: 0.8;
+}
+
+.expand-icon {
+  font-size: 12px;
+  color: #888;
+}
+
+.task-badge {
+  background: #e94560;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+.section-content {
+  margin-top: 8px;
+}
+
+.empty-state {
+  color: #888;
+  font-size: 13px;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.agent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agent-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.agent-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.agent-item.online {
+  border-left: 3px solid #4ade80;
+}
+
+.agent-item.offline {
+  border-left: 3px solid #f87171;
+}
+
+.agent-item.busy {
+  border-left: 3px solid #fbbf24;
+}
+
+.agent-item.idle {
+  border-left: 3px solid #9ca3af;
+}
+
+.agent-icon {
+  font-size: 20px;
+}
+
+.agent-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.agent-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.agent-role {
+  font-size: 12px;
+  color: #888;
+}
+
+.agent-status {
+  font-size: 14px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.task-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.task-name {
+  font-size: 13px;
+  flex: 1;
+}
+
+.task-agent {
+  font-size: 12px;
+  color: #888;
+  margin-left: 12px;
+}
+
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.action-btn {
+  flex: 1;
+  min-width: 80px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
