@@ -1,0 +1,26 @@
+.office-scene {
+  position: relative;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.office-scene-office {
+  background-color: #f5f5f5;
+}
+
+.office-scene-cloud {
+  background-color: #e8f4f8;
+}
+
+.office-scene-terminal {
+  background-color: #1a1a2e;
+}
+
+.scene-element {
+  position: absolute;
+  z-index: 10;
+}
