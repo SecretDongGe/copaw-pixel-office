@@ -251,3 +251,102 @@
 #spacer {
   height: 100px;
 }
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-top: -16px;
+}
+
+.office-scene {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0f0f0;
+
+  .office-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .office-cheetah {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    animation: bounce 2s ease-in-out infinite;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+.mood-status {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.mood-status strong {
+  color: var(--accent);
+}
+
+#features {
+  text-align: center;
+  padding: 32px 20px;
+
+  h2 {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: var(--text);
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+}
